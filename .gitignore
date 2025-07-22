@@ -1,0 +1,11 @@
+# Backend (Java/Spring)
+.idea/
+target/
+*.jar
+*.iml
+
+# Frontend (React)
+node_modules/
+.env
+build/
+dist/
