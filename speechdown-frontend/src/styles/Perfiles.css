@@ -1,0 +1,118 @@
+.perfiles-container {
+    padding: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+    font-family: "Arial", sans-serif;
+  }
+  
+  .perfiles-container h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #333;
+    text-align: center;
+  }
+  
+  .perfiles-container .subtitulo {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 30px;
+  }
+  
+  /* Lista de perfiles */
+  .lista-perfiles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .perfil-card {
+    background: #f7f9fc;
+    border: 2px solid transparent;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  }
+  
+  .perfil-card:hover {
+    transform: translateY(-5px);
+    border-color: #4a90e2;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .perfil-card.seleccionado {
+    border-color: #4a90e2;
+    background: #eaf3ff;
+  }
+  
+  .perfil-card h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  .perfil-card .btn-eliminar {
+    background-color: #e74c3c;
+    border: none;
+    padding: 8px 12px;
+    color: white;
+    font-size: 0.9rem;
+    border-radius: 6px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .perfil-card .btn-eliminar:hover {
+    background-color: #c0392b;
+  }
+  
+  /* Crear nuevo perfil */
+  .nuevo-perfil {
+    background: #fff;
+    border-radius: 12px;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    text-align: center;
+  }
+  
+  .nuevo-perfil h2 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    color: #444;
+  }
+  
+  .nuevo-perfil input {
+    width: 30%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .nuevo-perfil input:focus {
+    border-color: #4a90e2;
+  }
+  
+  .btn-agregar {
+    background-color: #4a90e2;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-agregar:hover {
+    background-color: #357abd;
+  }
+  

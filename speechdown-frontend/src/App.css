@@ -1,0 +1,11 @@
+/* Reset y base */
+
+body {
+  font-family: 'Comic Sans MS', cursive, sans-serif; /* Tipografía amigable */
+  background-color: #f0f8ff; /* Azul muy suave */
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+

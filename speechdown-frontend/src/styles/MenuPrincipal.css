@@ -1,0 +1,163 @@
+/* Layout principal en columnas */
+.app-layout {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  grid-template-rows: 100vh; /* Ocupa toda la altura de la ventana */
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Sidebar - Columna izquierda */
+.sidebar {
+  background: #2c3e50;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Contenido del sidebar */
+.sidebar-header {
+  margin-bottom: 30px;
+}
+
+.sidebar-header h2 {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.sidebar-header p {
+  margin: 5px 0;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+/* Menú del sidebar */
+.sidebar-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-menu li {
+  padding: 12px 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  font-size: 1rem;
+}
+
+.sidebar-menu li:hover {
+  background: #34495e;
+}
+
+.sidebar-menu li.active {
+  background: #3498db;
+  font-weight: 600;
+}
+
+.sidebar-menu li.logout {
+  background: #e74c3c;
+  text-align: center;
+}
+
+.sidebar-menu li.logout:hover {
+  background: #c0392b;
+}
+
+/* Área principal: header, contenido y footer */
+.main-area {
+  display: grid;
+  grid-template-rows: 60px 1fr 40px; /* Header, Content, Footer */
+  height: 100%;
+  background: #f0f2f5;
+}
+
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 30px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
+}
+
+.header h1 {
+  font-weight: 600;
+  color: #2c3e50;
+  margin: 0;
+}
+
+/* Content */
+.content {
+  padding: 20px 30px;
+  overflow-y: auto;
+  background-color: #ffffff;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 10px;
+  font-size: 0.9em;
+  color: #7f8c8d;
+  background-color: #ffffff;
+  border-top: 1px solid #ddd;
+}
+
+/* Estilos para la tarjeta de perfil */
+.profile-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.profile-title {
+  color: #4a6fa5;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.info-item {
+  display: flex;
+  align-items: baseline;
+  padding: 0.8rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.info-label {
+  font-weight: 600;
+  color: #555;
+  min-width: 100px;
+  margin-right: 1rem;
+}
+
+.info-value {
+  color: #333;
+  font-size: 1.1rem;
+}

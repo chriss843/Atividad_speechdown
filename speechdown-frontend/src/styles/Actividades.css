@@ -1,0 +1,298 @@
+/* styles/Actividades.css */
+.actividades-container {
+    padding: 25px;
+    background-color: #f9f7fe;
+    min-height: 100vh;
+    box-sizing: border-box;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+  
+.actividades-container h1 {
+    text-align: center;
+    color: #3a7bd5;
+    font-size: 2.6rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+    background: linear-gradient(to right, #3a7bd5, #00d2ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+  
+.subtitulo {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 35px;
+    line-height: 1.5;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+.nombre-container {
+    text-align: center;
+    margin-bottom: 35px;
+}
+  
+.nombre-container label {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-right: 10px;
+    color: #444;
+    display: block;
+    margin-bottom: 12px;
+}
+  
+.nombre-container input {
+    padding: 12px 20px;
+    border: 2px solid #d1e3ff;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    width: 320px;
+    max-width: 85%;
+    transition: all 0.3s ease;
+    background-color: #f0f7ff;
+}
+  
+.nombre-container input:focus {
+    border-color: #3a7bd5;
+    outline: none;
+    box-shadow: 0 0 8px rgba(58, 123, 213, 0.3);
+    background-color: #fff;
+}
+  
+/* Categorías */
+.categoria-titulo {
+    text-align: center;
+    margin: 35px 0 25px;
+    color: #444;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #3a7bd5;
+}
+  
+.categorias-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 22px;
+    padding: 0 20px;
+    margin-bottom: 35px;
+}
+  
+.categoria-card {
+    background: #fff;
+    border-radius: 16px;
+    text-align: center;
+    padding: 22px 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid #e1f0ff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+  
+.categoria-card img {
+    width: 85px;
+    height: 85px;
+    object-fit: contain;
+    margin-bottom: 12px;
+    transition: transform 0.3s ease;
+}
+  
+.categoria-card h3 {
+    margin-top: 12px;
+    font-size: 1.1rem;
+    color: #333;
+    font-weight: 600;
+}
+  
+.categoria-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(58, 123, 213, 0.15);
+    border-color: #3a7bd5;
+}
+
+.categoria-card:hover img {
+    transform: scale(1.1);
+}
+  
+.categoria-card.seleccionado {
+    border: 2px solid #3a7bd5;
+    background: #e1f0ff;
+    box-shadow: 0 6px 15px rgba(58, 123, 213, 0.2);
+}
+  
+/* Botón */
+.boton-container {
+    margin: 35px auto;
+    text-align: center;
+}
+  
+.btn-generar {
+    background: linear-gradient(to right, #3a7bd5, #00d2ff);
+    color: #fff;
+    padding: 14px 32px;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    min-width: 220px;
+    position: relative;
+    overflow: hidden;
+}
+  
+.btn-generar:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(58, 123, 213, 0.4);
+}
+
+.btn-generar:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+.btn-generar:disabled::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.4),
+        transparent
+    );
+    animation: loading 1.5s infinite;
+}
+  
+@keyframes loading {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+/* Actividad generada */
+.mensaje {
+    text-align: center;
+    margin: 30px auto;
+    font-size: 1.1rem;
+    color: #2c3e50;
+    max-width: 800px;
+    line-height: 1.7;
+    padding: 20px;
+    background: #fff;
+    border-radius: 12px;
+    border-left: 5px solid #3a7bd5;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.mensaje h3 {
+    color: #3a7bd5;
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .categorias-grid {
+        grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+        gap: 15px;
+    }
+    
+    .actividades-container h1 {
+        font-size: 2rem;
+    }
+    
+    .categoria-titulo {
+        font-size: 1.4rem;
+    }
+}
+
+
+/* Estilos para el contenedor de rpuestas prompt */
+
+/* Estilos para el contenedor principal */
+.mensaje.exito {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    text-align: left;
+  }
+  
+  /* Estilos para títulos de sección */
+  .section-title {
+    color: #4a6fa5;
+    margin: 1.5rem 0 1rem 0;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #e1e5eb;
+    font-size: 1.2rem;
+  }
+  
+  /* Estilos para elementos de lista */
+  .list-item {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.5rem;
+    list-style-type: none;
+  }
+  
+  .list-item:before {
+    content: "•";
+    color: #4a6fa5;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+  }
+  
+  .numbered-item {
+    margin-bottom: 0.5rem;
+    list-style-type: decimal;
+    list-style-position: inside;
+  }
+  
+  /* Estilos para texto normal y subtítulos */
+  .activity-text {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    color: #444;
+  }
+  
+  .subtitle {
+    font-weight: 500;
+    margin: 1rem 0;
+    color: #333;
+  }
+  
+  .subtitle strong {
+    color: #4a6fa5;
+  }
+  
+  /* Estilos para el botón de reintentar */
+  .btn-reintentar {
+    margin-top: 1.5rem;
+    padding: 0.7rem 1.5rem;
+    background-color: #4a6fa5;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-reintentar:hover {
+    background-color: #3a5a80;
+  }
