@@ -1,98 +1,152 @@
-##### \# Atividad SpeechDown
+UNIVERSIDAD DE LAS FUERZAS ARMADAS ESPE
 
-##### 
+Ingeniería en Tecnologías de la Información
 
-##### 
 
-##### Proyecto fullstack para gestión de discursos, con:
+<<<<<<< HEAD
+=======
+##### Proyecto fullstack para gestiÃ³n de discursos, con:
+>>>>>>> 4c9f074cfc75e30392c163eeab44d1f0dd1f0719
 
-##### \- \*\*Backend\*\*: Java/Spring Boot
+Integrantes:
 
-##### \- \*\*Frontend\*\*: React.js
+Cristian Jácome
 
-##### 
+Ruth Changalombo
 
-##### \## ??? Requisitos
 
-##### \- Java 17+
 
-##### \- Node.js 16+
+Correo:
 
-##### \- Maven
+chrissjacome@gmail.com
 
-##### \- MySQL (opcional)
 
-##### 
 
-##### \## ?? Cómo ejecutar
+<<<<<<< HEAD
+GitHub:
+=======
+##### \## ?? CÃ³mo ejecutar
+>>>>>>> 4c9f074cfc75e30392c163eeab44d1f0dd1f0719
 
-##### 
+chriss843
 
-##### \### Backend
 
-##### ```bash
 
-##### cd backend
+SpeechDown - Plataforma de Terapia del Habla
 
-##### mvn spring-boot:run
 
-##### ```
 
-##### 
+Descripción:
 
-##### \### Frontend
+Plataforma fullstack para apoyo en terapia del habla infantil, integrando generación 
 
-##### ```bash
+de cuentos y actividades terapéuticas personalizadas mediante IA.
 
-##### cd frontend
 
-##### npm install
 
-##### npm start
 
-##### ```
 
-##### 
+\*\*\*\*Características principales\*\*\*\*
 
-##### \## ?? Variables de entorno
+* Generación de cuentos personalizados con enfoque terapéutico
+* Actividades interactivas basadas en necesidades específicas
+* Sistema de perfiles para seguimiento de progreso
+* Integración con Google TTS para retroalimentación auditiva
+* Interfaz amigable con diseño responsive
 
-##### Crea un `.env` en `frontend/`:
 
-##### ```plaintext
 
-##### REACT\_APP\_API\_URL=http://localhost:8080
+\*\*\*\* Requisitos del sistema \*\*\*\*
 
-##### ```
+* Java 17+ (Backend Spring Boot)
+* Node.js 16+ (Frontend React)
+* Maven 3.6+ (Gestión de dependencias Java)
+* MySQL 8.0+ (o PostgreSQL para producción)
+* Cuenta de Google Cloud (para Text-to-Speech API)
 
-##### 
 
-##### \## ?? Estructura del proyecto
 
-##### ```
+\*\*\*\*Instalación y despliegue\*\*\*\*
 
-##### Atividad\_speechdown/
 
-##### +-- backend/
 
-##### +-- frontend/
+* Configuración inicial
 
-##### +-- .gitignore
+1. Clonar el repositorio:
 
-##### +-- README.md
+      git clone https://github.com/tu-usuario/speechdown.git
 
-##### ```
+      cd speechdown
 
-##### 
+* Backend (Spring Boot)
 
-##### \## ?? Diseñar
 
-##### 1\. Haz fork del proyecto
 
-##### 2\. Crea una rama (`git checkout -b feature/nueva-funcion`)
+1. Configurar la base de datos:
+   cd backend/src/main/resources/  
+   cp application.example.properties application.properties
+2. Ejecutar la aplicación:
 
-##### 3\. Haz commit (`git commit -m 'Agrega nueva funcionalidad'`)
+    cd backend/
 
-##### 4\. Haz push (`git push origin feature/nueva-funcion`)
+    mvn spring-boot:run
 
-##### 5\. Abre un Pull Request
+
+
+* Frontend (React)
+
+
+
+1. Configurar las variables de entorno:
+   cd frontend/  
+   cp .env.example .env
+2. Instalar dependencias y ejecutar:
+
+
+
+    npm install
+
+    npm start
+
+
+
+\*\*\*\*Componentes clave\*\*\*\*\*
+
+
+
+1. Frontend: Interfaz de usuario en React
+2. Backend: API REST en Spring Boot 
+3. IA: Integración con Gemini API para generación de contenido.
+4. TTS: Google Cloud Text-to-Speech para audio terapéutico.
+5. DB: Almacenamiento relacional para usuarios y progreso.
+
+
+
+\*\*\*\*\*Variables de entorno\*\*\*\*\*\*\*
+
+* Backend (application.properties)
+
+
+
+&nbsp;   # Database  
+
+&nbsp;     spring.datasource.url=jdbc:mysql://localhost:3306/speechdown-db  
+
+&nbsp;     spring.datasource.username=usuario  
+
+&nbsp;     spring.datasource.password=contraseña  
+
+&nbsp;  # Google Cloud  
+&nbsp;    google.cloud.api.key=tu-api-key  
+&nbsp;    google.cloud.tts.project-id=tu-project-id  
+&nbsp;  # Gemini AI  
+&nbsp;    gemini.api.key=tu-api-key  
+&nbsp;    gemini.api.url=https://generativelanguage.googleapis.com/v1beta/models  
+
+<<<<<<< HEAD
+=======
+##### \## ?? DiseÃ±ar
+>>>>>>> 4c9f074cfc75e30392c163eeab44d1f0dd1f0719
+
+
 
