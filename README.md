@@ -4,7 +4,7 @@
 
 ##### 
 
-##### Proyecto fullstack para gestiÛn de discursos, con:
+##### Proyecto fullstack para gesti√≥n de discursos, con:
 
 ##### \- \*\*Backend\*\*: Java/Spring Boot
 
@@ -24,7 +24,7 @@
 
 ##### 
 
-##### \## ?? CÛmo ejecutar
+##### \## ?? C√≥mo ejecutar
 
 ##### 
 
@@ -84,7 +84,7 @@
 
 ##### 
 
-##### \## ?? Contribuir
+##### \## ?? Dise√±ar
 
 ##### 1\. Haz fork del proyecto
 
